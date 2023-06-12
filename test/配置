@@ -1,0 +1,5 @@
+1，安装langchain和openai包
+2，linux和mac：export OPENAI_API_KEY=<your_api_key>
+windows:setx OPENAI_API_KEY <your_api_key>
+3,Agents:pip install google-search-results
+searpapi需要付费使用

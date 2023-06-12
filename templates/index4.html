@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT-4 Search and Q&A</title>
+</head>
+<body>
+    <h1>GPT-4 Search and Q&A</h1>
+    <form action="/search" method="POST">
+        <label for="query">Search or ask a question:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if answer %}
+    <h2>Answer:</h2>
+    <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>

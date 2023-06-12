@@ -1,0 +1,67 @@
+body {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            max-width: 500px;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+        input[type="submit"] {
+            margin-left: 10px;
+            width: 80px;
+            height: 40px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            outline: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0062cc;
+        }
+
+       /* 设置标题的样式 */
+        h1 {
+          text-align: center;
+          font-size: 36px;
+          margin-top: 50px;
+          margin-bottom: 30px;
+        }
+
+        /* 设置问题和答案的样式 */
+        h2 {
+          text-align: center;
+          font-size: 24px;
+          margin-top: 60px;
+          margin-bottom: 10px;
+        }
+
+        /* 设置答案的样式 */
+        p {
+          text-align: center;
+          font-size: 20px;
+          margin-top: 20px;
+        }

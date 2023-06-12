@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Light2cloud</title>
+  <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+  <h1>Light2cloud Chatbot</h1>
+  <form action="/" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="file">上传文件:</label>
+      <input type="file" name="file" id="file">
+    </div><br>
+    <div class="form-group">
+      <label for="prompt">询问问题:</label>
+      <input type="text" name="prompt" id="prompt">
+    </div>
+    <input type="submit" value="提问">
+  </form>
+  {% if answer %}
+    <h2>回答:</h2>
+    <p>{{ answer }}</p>
+  {% endif %}
+</body>
+</html>

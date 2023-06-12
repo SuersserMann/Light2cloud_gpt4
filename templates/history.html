@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation History</title>
+</head>
+<body>
+    <h1>Conversation History</h1>
+    <ul>
+        {% for item in history %}
+        <li>
+            <p><strong>You:</strong> {{ item.user }}</p>
+            <p><strong>GPT-4:</strong> {{ item.ai }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <form action="{{ url_for('clear_history') }}" method="POST">
+        <button type="submit">Clear History</button>
+    </form>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
